@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -20,7 +21,7 @@ int print_char(va_list args)
  *
  * @args: a variable argument list containing a single char * argument
  *
- * Return: the number of characters printed excluding null byte
+ * Return: the number of characters printed (excluding the null byte)
  */
 int print_string(va_list args)
 {
@@ -44,7 +45,7 @@ int print_string(va_list args)
  *          for how to print the arguments
  * @...: the variable arguments to print, based on the directives in @format
  *
- * Return: the number of characters printed (excludin the null byte)
+ * Return: the number of characters printed (excluding the null byte)
  */
 int _printf(const char *format, ...)
 {
